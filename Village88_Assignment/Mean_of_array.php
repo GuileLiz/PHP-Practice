@@ -4,5 +4,5 @@
     forEach($numbers as $number){
         $sum += $number;
     }
-    echo $sum/count($numbers);
+    echo "mean is ".$sum/count($numbers);
 ?>

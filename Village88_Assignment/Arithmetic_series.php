@@ -1,5 +1,8 @@
 <?php
-    for($number=2; $number<=14; $number+=3){
-        echo $number . "<br>";
+    $numbers = array(2, 5, 8, 11, 14);
+    $sum=0;
+    foreach($numbers as $number){
+        $sum+=$number;
     }
+    echo $sum;
 ?>
