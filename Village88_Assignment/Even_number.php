@@ -1,5 +1,5 @@
 <?php
-    for($number=1; $number<=1000; $number++) {
+    for($number=2; $number<=1000; $number+=2) {
         echo $number . "<br>";
     }
 ?>
