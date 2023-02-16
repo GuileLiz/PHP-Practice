@@ -14,11 +14,39 @@ foreach($list as $value){
 // 2 4 6 8	
 ?> -->
 
-<?php
+<!-- <?php
 $fruits= array("A" => "Apple", "B" => "Banana");
 foreach($fruits as $key => $value)
 {
      echo $key . " - " . $value ."<br />";
 }
-//
+// A - Apple B - Banana
+?> -->
+
+<!-- <?php
+$fruits= array("A" => "Apple", "B" => "Banana");
+foreach($fruits as $key => $value){
+     echo $value ."<br />";
+}
+// Apple Banana
+?> -->
+
+<?php
+
+?>
+
+<?php
+
+?>
+
+<?php
+
+?>
+
+<?php
+
+?>
+
+<?php
+
 ?>
