@@ -52,7 +52,7 @@ foreach($plots as $key => $value){
 }
 ?> -->
 
-<?php
+<!-- <?php
 $plots = array( array("a1", "a2", "a3"), array("b1", "b2", "b3"), array("c1", "c2", "c3") );
 foreach($plots as $value)
 {
@@ -60,9 +60,9 @@ foreach($plots as $value)
      var_dump($value);
 	 //logging the value 0,1,2
 }
-?>
+?> -->
 
-<?php
+<!-- <?php
 $nations = array( array("PH"=>"Philippines", "KR"=>"South Korea"), array("PHP"=>"Philippine peso", "KRW"=>"South Korean won"), array("Manila"=>"Maynilad", "Seoul"=>"Seorabeol") );
 foreach($nations as $key => $value)
 {
@@ -71,9 +71,18 @@ foreach($nations as $key => $value)
      {
              echo $key2 ." - " . $value2."<br />";
      }
+	 //key is 0, PH - Philippines 
 }
-?>
+?> -->
 
 <?php
-
+$nations = array( array("PH"=>"Philippines", "KR"=>"South Korea"), array("PHP"=>"Philippine peso", "KRW"=>"South Korean won"), array("Manila"=>"Maynilad", "Seoul"=>"Seorabeol") );
+foreach($nations as $nation)
+{
+     foreach($nation as $key=>$value)
+     {
+             echo $key ." - " . $value."<br />";
+     }
+	 // PH - Philippines
+}
 ?>
