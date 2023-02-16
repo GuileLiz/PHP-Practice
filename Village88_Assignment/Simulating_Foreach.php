@@ -32,7 +32,11 @@ foreach($fruits as $key => $value){
 ?> -->
 
 <?php
-
+$fruits= array("A" => "Apple", "B" => "Banana");
+foreach($fruits as $key => $value){
+     echo $key ."<br />";
+}
+// A B
 ?>
 
 <?php
