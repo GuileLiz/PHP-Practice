@@ -1,14 +1,13 @@
 <?php
 $digits = array(3, 12, 30);
-function exponential($arr)
-{
-	$result = []
-	foreach($arr as num) {
-		$result_push[num]
-		return $result
-  }
+function exponential($digits){
+        $cube = array();
+        foreach($digits as $digit) {
+                $cube[]= [$digit**3];	
+        }
+        return $cube; 
 }
-$result = exponential($digits)
+$result = exponential($digits);
 var_dump($result); 
 /* expected output:
         array (size=3)
