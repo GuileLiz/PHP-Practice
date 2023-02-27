@@ -1,9 +1,10 @@
 <?php
+//part 1
 $list = array(6, 1, 3, 5, 7);
 foreach($list as $num){
 	echo "<p>". str_repeat("_ ",$num) ."</p>";
 }
-
+//part 2
 $list = array(4, "Michael", 3, "Karen", 2, "Rogie");
 foreach($list as $num){
 	if(is_numeric($num)){
