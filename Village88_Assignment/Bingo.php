@@ -6,7 +6,8 @@
 			margin: 0;
 		}
 		table {
-			padding:0;
+			border-spacing:0;
+			
 		}
 		.odd-row {
 			color:blue;
@@ -16,6 +17,9 @@
 		}
 		.even-row, .odd-row {
 			text-align:center;
+			height: 25px;
+			width: 25px;
+			font-family: Arial, Helvetica, sans-serif;
 		}
 	</style>
 </head>
