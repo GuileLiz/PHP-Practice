@@ -7,7 +7,6 @@
 		}
 		table {
 			border-spacing:0;
-			
 		}
 		.odd-row {
 			color:blue;
@@ -26,46 +25,37 @@
 <body>
 	<table>
 		<tr>
-			<th class="odd-row">B</th>
-			<th class="odd-row">I</th>
-			<th class="odd-row">N</th>
-			<th class="odd-row">G</th>
-			<th class="odd-row">O</th>
+<?php  
+	$letters = array("B","I","N","G","O");
+	//Creating the top most part of bingo card 
+	foreach($letters as $letter) { ?>
+			<th class="odd-row"><?=$letter?></th>
+<?php } ?>
 		</tr>
 		<tr>
-			<td class="even-row">2</td>
-			<td class="even-row">4</td>
-			<td class="even-row">6</td>
-			<td class="even-row">8</td>
-			<td class="even-row">10</td>
+<?php for($number=2; $number<=2*5; $number+=2) { ?>
+			<td class="even-row"><?=$number?></td>
+<?php } ?>
 		</tr>
 		<tr>
-			<td class="odd-row">3</td>
-			<td class="odd-row">6</td>
-			<td class="odd-row">9</td>
-			<td class="odd-row">12</td>
-			<td class="odd-row">15</td>
+<?php for($number=3; $number<=3*5; $number+=3) { ?>
+			<td class="odd-row"><?=$number?></td>
+<?php } ?>
 		</tr>
 		<tr>
-			<td class="even-row">4</td>
-			<td class="even-row">8</td>
-			<td class="even-row">12</td>
-			<td class="even-row">16</td>
-			<td class="even-row">20</td>
+<?php for($number=4; $number<=4*5; $number+=4) { ?>
+			<td class="even-row"><?=$number?></td>
+<?php } ?>
 		</tr>
 		<tr>
-			<td class="odd-row">5</td>
-			<td class="odd-row">10</td>
-			<td class="odd-row">15</td>
-			<td class="odd-row">20</td>
-			<td class="odd-row">25</td>
+<?php for($number=5; $number<=5*5; $number+=5) { ?>
+			<td class="odd-row"><?=$number?></td>
+<?php } ?>
 		</tr>
 		<tr>
-			<td class="even-row">6</td>
-			<td class="even-row">12</td>
-			<td class="even-row">18</td>
-			<td class="even-row">24</td>
-			<td class="even-row">30</td>
+<?php for($number=6; $number<=6*5; $number+=6) { ?>
+			<td class="even-row"><?=$number?></td>
+<?php } ?>
 		</tr>
 	</table>
 </body>
