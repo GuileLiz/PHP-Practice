@@ -34,10 +34,10 @@ Then for the font color, make it alternate per cell (like a chessboard).
 	$letters = array("B","I","N","G","O");
 	//Creating the top most part of bingo card 
 	foreach($letters as $key => $letter) { ?>
-	<?php if (($key+1)%2 == 0) { ?>
-		<th class="light"><?=$letter?></th> 
-	<?php  } else { ?>
-		<th class="dark"><?=$letter?></th> 
+		<?php if (($key+1)%2 == 0) { ?>
+			<th class="light"><?=$letter?></th> 
+		<?php  } else { ?>
+			<th class="dark"><?=$letter?></th> 
 		<?php } ?>
 <?php } ?>
 		</tr>
