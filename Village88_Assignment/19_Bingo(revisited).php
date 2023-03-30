@@ -29,7 +29,7 @@ Then for the font color, make it alternate per cell (like a chessboard).
 </head>
 <body>
 	<table>
-		<tr>
+		<h1>
 <?php  
 	$letters = array("B","I","N","G","O");
 	//Creating the top most part of bingo card 
@@ -40,7 +40,7 @@ Then for the font color, make it alternate per cell (like a chessboard).
 			<th class="dark"><?=$letter?></th> 
 		<?php } ?>
 <?php } ?>
-		</tr>
+		</h1>
 		<tr>
 <?php for($number=2; $number<=2*5; $number+=2) { ?>
 			<?php  if ($number%4 != 0) { ?>
