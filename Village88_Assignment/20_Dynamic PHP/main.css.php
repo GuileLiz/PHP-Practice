@@ -1,5 +1,5 @@
 <?php
- header('Content-type: text/css');
+	header('Content-type: text/css');
 ?>
 p {
 	font-size: <?=rand(10,30);?>px;
